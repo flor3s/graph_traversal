@@ -7,4 +7,6 @@ The method returns (to the console) the first found way to get from the first ar
 
 The project predominately tests working graph creation and traversal skills.
 
-To see the project in action, either clone into this directory and run `knight_moves.rb` in your console, followed by `knight_moves(start_position, end_position)`, where the `start_position` and `end_position` are arrays with values between `[0,0]` and `[7,7]`
+To see the project in action, either 
+1. clone into this directory and run `knight_moves.rb` in your console, followed by `knight_moves(start_position, end_position)`, where the `start_position` and `end_position` are arrays with values between `[0,0]` and `[7,7]`
+2. navigate to https://repl.it/@daveyjones/knight and click run to see sample test results

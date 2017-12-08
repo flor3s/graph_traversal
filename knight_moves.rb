@@ -35,9 +35,11 @@ end
 
 def knight_moves(start_position, end_position)
   if start_position[0] < 0 || start_position[0] > 7 || start_position[1] < 0 || start_position[1] > 7
-    return "Please pass a valid start position (between [0,0] and [7,7]) to the method."
+    puts "Please pass a valid start position (between [0,0] and [7,7]) to the method."
+    return
   elsif end_position[0] < 0 || end_position[0] > 7 || end_position[1] < 0 || end_position[1] > 7
-    return "Please pass a valid end position (between [0,0] and [7,7]) to the method."
+    puts "Please pass a valid end position (between [0,0] and [7,7]) to the method."
+    return
   end
   
   board = [
@@ -68,7 +70,7 @@ def knight_moves(start_position, end_position)
       previous_positions << knight.current_position
       
       if knight.current_position == end_position
-        puts "You made it in #{previous_positions.length} moves! Here's your path:"
+        puts "You made it in #{previous_positions.length - 1} move(s)! Here's your path:"
         previous_positions.each { |position| puts "#{position}" }
         return
       end
